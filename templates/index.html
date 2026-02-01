@@ -1,27 +1,27 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
 	<title>Home 01</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="{% static '/images/icons/favicon.png'%}"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../static/fonts/fontawesome-5.0.8/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/fontawesome-5.0.8/css/fontawesome-all.min.css'%}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../static/fonts/iconic/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/iconic/css/material-design-iconic-font.min.css'%}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
 <!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css'%}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../static/css/util.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.min.css' %}">
 <!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -37,8 +37,7 @@
 							<span>
 								New York, NY
 							</span>
-
-							<img class="m-b-1 m-rl-8" src="images/icons/icon-night.png" alt="IMG">
+							<img class="m-b-1 m-rl-8" src="{% static 'images/icons/icon-night.png' %}" alt="IMG">
 
 							<span>
 								HI 58° LO 56°
@@ -429,7 +428,7 @@
 													<!-- Item post -->	
 													<div>
 														<a href="blog-detail-01.html" class="wrap-pic-w hov1 trans-03">
-															<img src="images/post-08.jpg" alt="IMG">
+															<img src="{% static 'images/post-08.jpg' %}" alt="IMG">
 														</a>
 
 														<div class="p-t-10">
@@ -4858,7 +4857,7 @@
 
 							<li class="flex-wr-sb-s p-b-20">
 								<a href="#" class="size-w-4 wrap-pic-w hov1 trans-03">
-									<img src="images/popular-post-03.jpg" alt="IMG">
+									<img src="{% static 'images/popular-post-03.jpg'%}" alt="IMG">
 								</a>
 
 								<div class="size-w-5">
@@ -4922,12 +4921,12 @@
 		<div class="bg11">
 			<div class="container size-h-4 flex-c-c p-tb-15">
 				<span class="f1-s-1 cl0 txt-center">
-					Copyright © 2018 
+					Copyright © 2018
 
-					<a href="#" class="f1-s-1 cl10 hov-link1"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					<a href="#" class="f1-s-1 cl10 hov-link1"><Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.>
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-				</span>
+ Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+                </span>
 			</div>
 		</div>
 	</footer>
@@ -4953,14 +4952,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</div>
 
 <!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
 <!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
 <!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js'%}"></script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="{% static 'js/main.js'%}"></script>
 
 </body>
 </html>
