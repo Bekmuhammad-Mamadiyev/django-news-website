@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 from django.utils import timezone
 
 
@@ -41,3 +42,15 @@ class News(models.Model):
         ordering = ['-publish_time']
         verbose_name = 'New'
         verbose_name_plural = 'News'
+
+    def get_absolute_url(self):
+        return reverse('news_detail', args=[self.slug])
+
+
+class Contact(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=150)
+    message = models.TextField()
+
+    def __str__(self):
+        return self.email
