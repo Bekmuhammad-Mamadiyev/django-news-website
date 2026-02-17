@@ -7,6 +7,7 @@ from core import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('apps.news.urls')),
+    path('accounts/', include('apps.accounts.urls')),
 ]
 
 
