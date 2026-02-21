@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/6.0/ref/settings/
 
 from pathlib import Path
 
-from django.conf.global_settings import STATICFILES_DIRS
+from django.conf.global_settings import STATICFILES_DIRS, LOGIN_REDIRECT_URL
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-@klbi$_@m!k9fk$i@qtidh(3j0f30m4zd!$kx1$3+i@xlo1r1u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -115,6 +115,7 @@ USE_I18N = True
 USE_TZ = True
 
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
@@ -124,3 +125,13 @@ STATIC_ROOT = BASE_DIR / 'staticfiles/'
 
 MEDIA_ROOT = BASE_DIR / 'media/'
 MEDIA_URL = '/media/'
+
+
+LOGIN_URL = 'login'
+
+LOGIN_REDIRECT_URL='home_page'
+
+PASSWORD_RESET_TIMEOUT = 3200
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'

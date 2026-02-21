@@ -25,8 +25,13 @@ def user_login(request):
     else:
         form = LoginForm()
         context = {'form': form}
-        return render(request, 'accounts/login.html', context)
+        return render(request, 'registration/login.html', context)
 
 
-def profile(request):
-    return render(request, 'accounts/profile.html')
+
+def dashboard(request):
+    user = request.user
+    context = {'user': user}
+    return render(request, 'registration/dashboard.html', context)
+
+
